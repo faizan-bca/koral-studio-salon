@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/**************************************************
+        CSS for Crousel 
+**************************************************/
+      .navbar-nav .nav-link {
+          color: black;
+          margin: 0 10px;
+      }
+      .navbar-nav .nav-link:hover {
+          color: #007bff;
+      }
+      .navbar-brand img {
+          height: 40px;
+      }
+      .nav-icon {
+          margin: 0 5px;
+      }
+      .nav-icon img {
+          height: 20px;
+      }
+      .cart-icon img {
+          height: 24px;
+      }
+      .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      /* Carousel image styling */
+      .carousel-img {
+        height: 100vh; /* set the height to 100% of the viewport height */
+        object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+      }
+
+      .carousel-inner {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      /* Media Screen */
+      /* Base styles (Mobile first) */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-icon {
+    margin: 0 5px;
+}
+
+.nav-icon img {
+    height: 20px;
+}
+
+.cart-icon img {
+    height: 24px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-img {
+    height: auto; /* Default height for carousel images */
+}
+
+/* Tablet styles (min-width: 768px) */
+@media (min-width: 768px) {
+    .navbar-nav .nav-link {
+        margin: 0 15px;
+    }
+
+    .navbar-brand img {
+        height: 50px;
+    }
+
+    .carousel-img {
+        height: 500px; /* Adjust as needed */
+    }
+}
+
+/* Desktop styles (min-width: 992px) */
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        margin: 0 20px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .carousel-img {
+        height: 600px; /* Adjust as needed */
+    }
+}
