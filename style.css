@@ -4,23 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "poppins", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
 /**************************************************
-        CSS for Crousel 
+        CSS for Nav
 **************************************************/
       .navbar-nav .nav-link {
           color: black;
           margin: 0 10px;
       }
-      .navbar-nav .nav-link:hover {
-          color: #007bff;
-      }
+
       .fa-brands:hover {
-        color: grey;                /*hover on nav icon*/
+        color: #ffe6e6;                /*hover on nav icon*/
       }
       .navbar-brand img {
           height: 40px;
@@ -66,10 +64,11 @@ body {
     color: black;
     margin: 0 10px;
 }
-
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+  color:#ffe6e6;
 }
+
+
 
 .navbar-brand img {
     height: 40px;
@@ -136,17 +135,241 @@ body {
 .hero-img{
     width: 100%;
     height:100vh;
-  background-image: url('/image/header_one.png');
-  background-repeat: no-repeat no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position:center center;
+    background-image: url('/image/salon.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center center;
+}
+/* Responsive design for mobile devices */
+    @media only screen and (max-width: 768px) {
+      .hero-img {
+          height: 30vh; /* Adjust height for smaller screens */
+          background-attachment: scroll; /* Disable fixed background on mobile for better performance */
+      }
+    }
+/* css for 1st section in landing page after header */
+
+.card-content{
+    padding: 12px 12px;
+    /* display: flex;
+    justify-content:end;
+    align-items: center; */
+    text-align: justify;
+    flex-direction: column;
+  }
+
+  .card-content h2 {
+    text-align: left;
+  }
+
+.influencer-value {
+    padding: 12px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .influencer-card {
+
+    border: 8px solid #fff;
+    border-radius: 0 30px 0 30px;
+    width: 320px;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .influencer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@media screen and (max-width:768px) {
-    .hero-img{
-        width: 100%;
-        height:100%;
-        object-fit: cover;
-    }
-}
+.influencer-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .influencer-body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 3, 3, 0.171);
+    position: absolute;
+    top: 0;
+    right: -400px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 30px 30px;
+    flex-direction: column;
+    color: white;
+    transition: 1s;
+    backdrop-filter: blur(2px);
+  }
+
+  /* Enhancing Koral Name */
+    
+
+  /* second section start */
+  .second-section{
+    height:60vh;
+    background-image: url('/image/hair-wash-salon.jpg');
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+  }
+  
+  /* second section end */
+  /* footer css */
+  .widget-title {
+    color: #ffe6e6;
+  }
+
+  .text-start {
+    color: #fff;
+  }
+
+  .list-unstyled a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .list-unstyled .menu-item a:hover{
+    color:#ffe6e6;
+  }
+
+  .footer-logo img{
+    width:150px;
+  }
+
+  #mail a:hover{
+    color:#ffe6e6; 
+  }
+
+  #number:hover {
+    color:#ffe6e6;
+  }
+
+  .Copyright p{
+    color: #fff;
+  }
+
+  /* Service Card */
+  :root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fef8f8;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: #6A515E;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "MockFlowFont";   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+  /* End */
